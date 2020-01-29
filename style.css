@@ -1,0 +1,531 @@
+/*
+https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements
+
+#ef233c  crvena
+#414141  tamno siva
+*/
+@import url('https://fonts.googleapis.com/css?family=Gugi|Kaushan+Script|Source+Sans+Pro');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* header */
+header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 10px 30px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    margin-left: 50px;
+    color: #414141;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.logo {
+    text-decoration: none;
+    text-align: center;
+    line-height: 15px;
+    padding-top: 15px;
+}
+.logo::first-letter {
+    color: #ef233c;
+}
+nav span {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-family: 'Gugi', cursive;
+    color: #414141;
+    font-weight: bold;
+}
+.hgroup {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 100px;
+    text-align: center;
+}
+.hgroup h1 {
+    font-size: 3rem;
+}
+.hgroup p {
+    font-size: 1.2rem;
+    padding: 20px 0;
+}
+.btn {
+    padding: 15px 30px;
+    background: #ef233c;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    width: 300px;
+}
+
+/* section one */
+.one {
+    display: flex;
+}
+.one .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+.one .text h4 {
+    color: #ef233c;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    padding-bottom: 20px;
+}
+.one .text h4::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: #ef233c;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+.one p {
+    padding: 30px 0;
+    line-height: 1.8;
+}
+.one .img {
+    background-image: url(img/one.jpg);
+    height: 500px;
+    background-size: cover;
+    flex: 1;
+}
+
+/* section two */
+.two {
+    background: #f8f8f8;
+}
+.two .row1 {
+    text-align: center;
+    padding: 0 150px;
+}
+.two .row1 h4 {
+    color: #ef233c;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.two .row1 h4::after {
+/*
+    display: inline-block;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: #ef233c;
+    position:absolute;
+    top: 70px;
+    left: 440px;
+*/
+}
+.two .underline {
+    border: 2px solid #ef233c;
+    width: 90px;
+    margin: 0 auto 30px auto;
+}
+.two .row1 p {
+    padding: 40px 0;
+    line-height: 1.7;
+}
+.two .row2 {
+    display: flex;
+    margin-top: 50px;
+}
+.two .column {
+    flex: 1;
+    margin: 20px 40px 20px 40px;
+}
+.two .col1 h3::before {
+    font-family: "Font Awesome 5 Brands"; 
+    content: "\f099";
+    color: #ef233c;
+}
+.two .col2 h3::before {
+    font-family: "Font Awesome 5 Brands"; 
+    content: "\f17b";
+    color: #ef233c;
+}
+.two .col3 h3::before {
+    font-family: "Font Awesome 5 Free"; 
+    content: "\f140";
+    color: #ef233c;
+}
+.two .column p {
+    padding-bottom: 20px;
+}
+.two .column a {
+    color: #414141;
+}
+
+/* section three */
+.three {
+    background-image: url(img/three.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 40px;
+}
+.three h4 {
+    color: #ef233c;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.three h2 {
+    font-size: 2rem;
+}
+.three p {
+    text-align: right;
+    margin: 20px 0;
+}
+
+/* section four */
+hgroup {
+    text-align: center;
+    margin: 40px 0;
+}
+hgroup h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ef233c;
+}
+hgroup h2 {
+    font-size: 3rem;
+}
+.four {
+    margin: 40px auto;
+    width: 90%;
+}
+.four .row {
+    display: flex;
+}
+.four .col {
+    flex: 1;
+    padding: 50px;
+}
+.four .row2 {
+    text-align: right;
+}
+.four .img1 {
+    background-image: url(img/people1.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+.four .img2 {
+    background-image: url(img/people2.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+.four .img3 {
+    background-image: url(img/people3.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+.four .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.four .icons {
+    display: flex;
+    padding-top: 30px;
+    font-size: 1.7rem;
+    color: #ef233c;
+}
+.four .icons a {
+    color: #ef233c;
+}
+.four .icons li {
+    flex: 1;
+    list-style: none;
+}
+.four h3 {
+    color: #ef233c;
+    font-size: 2rem;
+}
+.four h5 {
+    font-size: 1.2rem;
+}
+.four p {
+    line-height: 1.6;
+}
+.four img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* section five */
+.five {
+    background: #ef233c;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+.five h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.five h2 {
+    font-size: 3rem;
+}
+
+/* section six */
+.six {
+    display: flex;
+}
+.col {
+    flex: 1;
+}
+.six .img1 {
+    background-image: url(img/project1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.six .img2 {
+    background-image: url(img/project9.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+.six .img3 {
+    background-image: url(img/project3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+.six .img4 {
+    background-image: url(img/project4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+.six .img5 {
+    background-image: url(img/project11.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+.six .row1 {
+    display: flex;  
+}
+.six .row2 {
+    display: flex;  
+}
+
+/* section seven*/
+.seven {
+    background: #ef233c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* section eight */
+.eight {
+    display: flex;
+    text-align: center;
+    background:linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url(img/section8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    align-items: center;
+    padding: 0 50px;
+}
+.eight .col {
+    margin: 15px;
+}
+.eight h2 {
+    color: #ef233c;
+    font-size: 4rem;
+}
+.eight h4 {
+    padding: 20px 0;
+}
+
+/* section nine */
+.nine {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.nine .col {
+    flex: 1;
+    padding: 60px;
+}
+.nine .col h3 {
+    font-size: 1.5rem;
+    text-indent: 15px;
+}
+.nine .col h2 {
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+.nine .col span {
+    position: relative;
+    top: -10px;
+    font-size: 1.2rem;
+    color: #ef233c;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.nine ul li {
+    list-style: none;
+    line-height: 2.1;
+}
+.nine .col2 {
+    box-shadow: 0 0 10px gray;
+}
+.nine .col ul li::before {
+    font-family: "Font Awesome 5 Free"; 
+    content: "\f14a";
+    color: #ef233c;
+}
+
+/* section ten */
+.ten {
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(img/ten.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+.ten blockquote {
+    color: white;
+    font-size: 2.4rem;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+}
+.ten span {
+    color: #ef233c;
+    font-size: 1.1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    padding-top: 20px;
+}
+
+/* section eleven */
+.eleven {
+    display: flex;
+    margin: auto;
+    padding: 60px 0;
+    background: #f8f8f8;
+}
+.eleven .row {
+    width: 90%;
+    margin: auto;
+}
+.eleven .col {
+    flex: 1;
+}
+.eleven h4 {
+    color: #ef233c;
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+.eleven h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    padding-top: 10px;
+}
+.eleven .col2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+/* section eleven */
+.twelve {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+.twelve span {
+    color: #ef233c;
+}
+.twelve p {
+    font-size: 1.2rem;
+    padding: 20px 0;
+}
+input {
+    display: inline-block;
+    width: 43%;
+    margin-bottom: 10px;
+}
+textarea {
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+}
+input {
+    padding: 10px;
+}
+
+/* footer */
+footer {
+    background: #ef233c;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+footer .icons {
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around; 
+}
+footer ul li {
+    list-style: none;
+    font-size: 2rem;
+    color: white;
+}
+footer ul li a {
+    color: white;
+}
